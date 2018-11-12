@@ -1,5 +1,5 @@
 import React from 'react'
-import Bookshelf from './Bookshelf';
+import Shelf from '../Components/Shelf';
 
 class ShelfPage extends React.Component {
   render() {
@@ -10,9 +10,9 @@ class ShelfPage extends React.Component {
             </div>
             <div className="list-books-content">
               <div>
-                  <Bookshelf title ={"Currently Reading"}/>
-                  <Bookshelf title = {"Want to Read"}/>
-                  <Bookshelf title = {"Read"}/>
+                  <Shelf title ={"Currently Reading"}/>
+                  <Shelf title = {"Want to Read"}/>
+                  <Shelf title = {"Read"}/>
               </div>
               
             </div>
