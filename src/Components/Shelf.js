@@ -11,10 +11,10 @@ class Shelf extends React.Component {
             <div className="bookshelf-books">
             <ol className="books-grid">
                 <li>
-                    <Book/>
+                    {/* <Book  book={{}}/> */}
                 </li>
                 <li>
-                    <Book/>
+                    {/* <Book book={{}}/> */}
                 </li>
             </ol>
             </div>

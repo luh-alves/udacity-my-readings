@@ -1,7 +1,19 @@
 import React from 'react'
 import Shelf from '../Components/Shelf';
+import * as BooksAPI from '../BooksAPI';
 
 class ShelfPage extends React.Component {
+
+  state = {
+    books:[]
+
+  }
+
+  componentWillMount(){
+    BooksAPI.getAll()
+      .then(books => this.setState({books:books}))
+  }
+
   render() {
     return (
         <div className="list-books">
