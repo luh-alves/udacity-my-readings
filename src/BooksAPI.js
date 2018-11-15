@@ -42,3 +42,11 @@ export const search = (query) =>
     body: JSON.stringify({ query })
   }).then(res => res.json())
     .then(data => data.books.items || data.books)
+
+export const storeBooksFromShelves = (books) =>{
+  localStorage.books = JSON.stringify(books)
+}
+
+export const retrieveBooksFromShelves = () =>{
+  return JSON.parse(localStorage.books)
+}
